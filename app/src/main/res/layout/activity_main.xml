@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnFacade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="外观模式"
+        android:onClick="onFacadeClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAdapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="适配器模式"
+        android:onClick="onAdapterClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnFacade" />
+
+    <Button
+        android:id="@+id/btnBuilder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="建造者模式"
+        android:onClick="onBuilderClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAdapter" />
+
+    <Button
+        android:id="@+id/btnProxy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="代理模式"
+        android:onClick="onProxyClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBuilder" />
+
+    <Button
+        android:id="@+id/btnStrategy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="策略模式"
+        android:onClick="onStrategyClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnProxy" />
+
+    <Button
+        android:id="@+id/btnTemplate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模版方法模式"
+        android:onClick="onTemplateClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnStrategy" />
+
+    <Button
+        android:id="@+id/btnSimpleFactory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="简单工厂模式"
+        android:onClick="onSimpleFactoryClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnTemplate" />
+
+    <Button
+        android:id="@+id/btnFactoryMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="工厂方法模式"
+        android:onClick="onFactoryMethodClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSimpleFactory" />
+
+    <Button
+        android:id="@+id/btnAbstractFactory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="抽象工厂模式"
+        android:onClick="onAbstractFactoryClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnFactoryMethod" />
+
+    <Button
+        android:id="@+id/btnSingleton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单例模式"
+        android:onClick="onSingletonClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAbstractFactory" />
+
+</android.support.constraint.ConstraintLayout>
